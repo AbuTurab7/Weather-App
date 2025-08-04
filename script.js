@@ -4,6 +4,7 @@ const input = document.getElementById("searchInput");
 const lower = document.querySelector(".lower");
 const clearBtn = document.getElementById("clearInput");
 
+
 input.addEventListener("input", () => {
   clearBtn.classList.toggle("visible", input.value !== "");
   clearBtn.classList.toggle("hidden", input.value === "");
@@ -12,7 +13,7 @@ input.addEventListener("input", () => {
 async function fetchWeatherByCity(city) {
   try {
     const weatherData = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=df0b7f7cb0968435fd8333c197bd2b11&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
     );
     const data = weatherData.json();
     return data;
