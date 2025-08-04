@@ -19,7 +19,6 @@ body {
   color: #222;
 }
 
-
 body.light-text {
   color: #f1f1f1;
 }
@@ -43,9 +42,11 @@ body.light-text {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
 .upper #inputContainer {
   position: relative;
 }
+
 #clearInput {
   position: absolute;
   right: 10px;
@@ -55,9 +56,11 @@ body.light-text {
   color: rgb(140, 161, 161);
   cursor: pointer;
 }
+
 .hidden{
   display: none;
 }
+
 .visible{
   display: inline-block;
 }
@@ -77,7 +80,6 @@ body.light-text {
   border-color: #007bff;
 }
 
-
 .upper button {
   padding: 10px 18px;
   margin: 6px 4px;
@@ -94,7 +96,6 @@ body.light-text {
 .upper button:hover {
   background-color: #0056b3;
 }
-
 
 .lower {
   margin-top: 20px;
